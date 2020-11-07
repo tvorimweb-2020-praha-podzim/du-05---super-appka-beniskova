@@ -52,5 +52,94 @@ body {
 /* ----- zde začni psát vlastní CSS ----- */
 body{
     color: black;
-    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #e5e5e5;
+}
+.navigace{
+    color: #48418e;
+}
+.sloupec1,
+.sloupec2{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer{
+    background-color: #48418e;
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+}
+footer p{
+    padding: 5px;
+}
+.vsechny{
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.sluzba{
+    color: black;
+    font-weight: normal;
+}
+.letadlo-nadpis,
+.bubliny-nadpis,
+.mapa-nadpis{
+    color: #48418e;
+    font-weight: bold;
+    font-weight: 700;
+}
+.letadlo{
+    background-image: url(images/letadlo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+header{
+    background-image: linear-gradient(to right, #25133d 25%, #aa5477 100%);
+    color: #ffffff;
+}
+h1{
+    font-size: 60px;
+    font-weight: normal;
+    margin: 0;
+}
+h2{
+    font-size: 40px;
+    margin: 0;
+}
+h1,
+h2{
+    font-weight: normal;
+}
+li{
+    list-style: none;
+    display: block;
+    border: 2px solid white;
+    max-width: 500px;
+    text-align: center;
+    border-radius: 10px;
+}
+ul{
+    padding-left: 0;
+}
+.sloupec1 :hover,
+.sloupec2 :hover{
+    color: #25133d;
+    text-transform: uppercase;
+}
+.informaci,
+.zdarma{
+    padding: 1.5rem;
+    margin-top: 1rem;
+    font-size: 25px;
+    font-weight: normal;
+}
+.informaci:hover,
+.zdarma:hover{
+    background-color: #48418e;
+}
+article,
+header,
+main{
+    padding: 2rem;
 }
