@@ -69,9 +69,10 @@ footer{
     color: #ffffff;
     text-align: center;
     margin: 0;
+    padding: 0.5rem;
 }
 footer p{
-    padding: 5px;
+    margin: 0;
 }
 .vsechny{
     background-color: #ffffff;
@@ -87,15 +88,20 @@ footer p{
 .letadlo-nadpis,
 .bubliny-nadpis,
 .mapa-nadpis{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     color: #48418e;
     font-weight: bold;
     font-weight: 700;
     font-size: 30px;
+    margin: 0;
+    padding-top: 0.5rem;
 }
-.letadlo{
-    background-image: url(images/letadlo.svg);
-    background-repeat: no-repeat;
-    background-position: center;
+.icon{
+    width: 80px;
+    align-self: center;
+    margin: 1rem;
 }
 header{
     background-image: linear-gradient(to right, #25133d 25%, #aa5477 100%);
@@ -144,14 +150,27 @@ ul{
 }
 article,
 header,
-main{
+main {
     padding: 2rem;
 }
 
-@media screen and (max-width: 900px){
+@media screen and (min-width: 800px){
     .vsechny{
+        display: flex;
         flex-wrap: nowrap;
         margin: auto;
+        padding-top: 0.5rem;
+    }
+    .letadlo-nadpis,
+    .bubliny-nadpis,
+    .mapa-nadpis{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column-reverse;
+        font-size: 25px;
+    }
+    h3{
+        padding-bottom: 0.5rem;
     }
     ul{
         display: flex;
@@ -161,8 +180,8 @@ main{
     }
     .informaci,
     .zdarma{
-    padding: 1.2rem 2rem;
-    margin-top: 0.5rem;
+        padding: 1.2rem 2rem;
+        margin-top: 0.5rem;
     }
     h2{
         font-weight: 300;
@@ -177,6 +196,61 @@ main{
         padding-right: 3rem;
     }
     .navigace-funkce{
+        padding-right: 3rem;
+    }
+}
+@media screen and (min-width: 1000px){
+    .vsechny{
+        flex-wrap: nowrap;
+        margin: auto;
+        padding-top: 1rem;
+    }
+    .letadlo-nadpis,
+    .bubliny-nadpis,
+    .mapa-nadpis{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column-reverse;
+        font-size: 20px;
+    }
+    h3{
+        padding-bottom: 0.5rem;
+    }
+    ul{
+        display: flex;
+    }
+    .informaci{
+        margin-left: 2rem;
+    }
+    .informaci,
+    .zdarma{
+        padding: 1.2rem 2rem;
+        margin-top: 0.5rem;
+    }
+    h2{
+        font-weight: 300;
+    }
+    .navigace{
+        flex-wrap: nowrap;
+        justify-content:flex-start ;
+        padding-left: 2rem;
+    }
+    .navigace-design{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .navigace-funkce{
+        padding-right: 3rem;
+    }
+    header{
+        background-image: url(images/telefon.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        height: 400px;
+    }
+    .appka{
+        width: 1200px;
+        padding-left: 3rem;
         padding-right: 3rem;
     }
 }
