@@ -51,7 +51,6 @@ body {
 
 /* ----- zde začni psát vlastní CSS ----- */
 body{
-    color: black;
     background-color: rgb(194, 189, 189);
 }
 .navigace{
@@ -60,9 +59,18 @@ body{
     padding: 1rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    font-size: 20px;
+    justify-content: space-between;
+    font-size: 25px;
+    padding: 2rem;
 }
+/*.navigace-appka,
+.navigace-design{
+    width: 50%;
+}*/
+/*.navigace-funkce,
+.navigace-stazeni{
+    align-self: flex-end;
+}*/
 footer{
     background-color: #48418e;
     width: 100%;
@@ -153,6 +161,10 @@ header,
 main {
     padding: 2rem;
 }
+/*.navigace-appka,
+.navigace-funkce{
+    margin-right: 2rem;
+}*/
 
 @media screen and (min-width: 800px){
     .vsechny{
@@ -190,6 +202,9 @@ main {
         flex-wrap: nowrap;
         justify-content:flex-start ;
         padding-left: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-size: 20px;
     }
     .navigace-design{
         padding-left: 3rem;
@@ -198,8 +213,12 @@ main {
     .navigace-funkce{
         padding-right: 3rem;
     }
+    .letadlo-popis,
+    .bubliny-popis{
+        margin-right: 1rem;
+    }
 }
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 1100px){
     .vsechny{
         flex-wrap: nowrap;
         margin: auto;
@@ -212,6 +231,9 @@ main {
         flex-wrap: nowrap;
         flex-direction: column-reverse;
         font-size: 20px;
+    }
+    h1{
+        font-size: 70px;
     }
     h3{
         padding-bottom: 0.5rem;
@@ -234,6 +256,9 @@ main {
         flex-wrap: nowrap;
         justify-content:flex-start ;
         padding-left: 2rem;
+        font-size: 20px;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
     .navigace-design{
         padding-left: 3rem;
@@ -247,10 +272,20 @@ main {
         background-repeat: no-repeat;
         background-position: right;
         height: 400px;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
     .appka{
         width: 1200px;
         padding-left: 3rem;
         padding-right: 3rem;
+    }
+    .letadlo-popis,
+    .bubliny-popis{
+        margin-right: 1rem;
+    }
+    .slogan{
+        width: 450px;
+        line-height: 1.6;
     }
 }
